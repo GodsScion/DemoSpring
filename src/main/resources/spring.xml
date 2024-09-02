@@ -7,15 +7,15 @@
 
 	<!-- #10 Constructor and Setter Injection  -->
 
-    <bean id="devId" class="com.springbokka.DemoSpring.Dev" autowire="byName">
-        <!-- defaults to laptop as it's id is same as Dev's Computer computer variable -->
-         <!-- Note that a defualt constructor is needed for Dev class in this way and also getters and setters for Computer computer variable -->
+    <bean id="devId" class="com.springbokka.DemoSpring.Dev" autowire="byType">
+        <!-- defaults to desktop as it is primary and it implements Computer -->
+        <!-- Note that a defualt constructor is needed for Dev class in this way and also getters and setters for Computer computer variable -->
     </bean>
     
-    <bean id="computer" class="com.springbokka.DemoSpring.Laptop">
+    <bean id="laptopId" class="com.springbokka.DemoSpring.Laptop">
     </bean>
 
-    <bean id="desktopId" class="com.springbokka.DemoSpring.Desktop">
+    <bean id="desktopId" class="com.springbokka.DemoSpring.Desktop" primary="true">
     </bean>
 
 </beans>
