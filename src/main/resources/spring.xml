@@ -8,20 +8,14 @@
 	<!-- #10 Constructor and Setter Injection  -->
 
     <bean id="devId" class="com.springbokka.DemoSpring.Dev">
-        <!-- SETTER INJECTION Making spirng assign laptop object to Dev -->
-        <!-- <property name="laptop" ref="laptopId"/>  -->
-        
-        <!-- CONSTRUCTOR INJECTION Making spring assign laptop object to Dev -->
-        <constructor-arg name="laptop" ref="laptopId"/>
-        <!-- CONSTRUCTOR INJECTION Another way of doing it, works when Dev(Laptop laptop, int age) is defined -->
-        <!-- <constructor-arg index="0" ref="laptopId"/>
-        <constructor-arg index="1" value="14"/> -->
-        
-        <!-- <property name="age" value="15"></property> -->
-        <constructor-arg name="age" value="15"/>
-
+        <!-- defaults to laptop -->
+        <constructor-arg name="computer" ref="laptopId"/>
     </bean>
     
     <bean id="laptopId" class="com.springbokka.DemoSpring.Laptop">
     </bean>
+
+    <bean id="desktopId" class="com.springbokka.DemoSpring.Desktop">
+    </bean>
+
 </beans>
