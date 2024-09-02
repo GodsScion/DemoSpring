@@ -4,6 +4,9 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+	<!-- #10 Constructor and Setter Injection  -->
+
     <bean id="devId" class="com.springbokka.DemoSpring.Dev">
         <!-- SETTER INJECTION Making spirng assign laptop object to Dev -->
         <!-- <property name="laptop" ref="laptopId"/>  -->
