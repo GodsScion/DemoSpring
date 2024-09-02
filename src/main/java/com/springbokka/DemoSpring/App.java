@@ -9,7 +9,8 @@ public class App
     {
     	ApplicationContext app = new ClassPathXmlApplicationContext("spring.xml");
     	
-    	Dev dev = (Dev) app.getBean("devId");   //Dev dev = app.getBean(Dev.class);
+    	Dev dev = app.getBean(Dev.class); // Dev dev = (Dev) app.getBean("devId");  // Another way to get bean
     	dev.build();
+
     }
 }
