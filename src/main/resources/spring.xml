@@ -5,11 +5,9 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<!-- #10 Constructor and Setter Injection  -->
+	<!-- #11 Autowire in Spring  -->
 
     <bean id="devId" class="com.springbokka.DemoSpring.Dev" autowire="byType">
-        <!-- defaults to desktop as it is primary and it implements Computer -->
-        <!-- Note that a defualt constructor is needed for Dev class in this way and also getters and setters for Computer computer variable -->
     </bean>
     
     <bean id="laptopId" class="com.springbokka.DemoSpring.Laptop">
