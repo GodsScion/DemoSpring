@@ -4,7 +4,13 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="dev" class="com.springbokka.DemoSpring.Dev">
+    <bean id="devId" class="com.springbokka.DemoSpring.Dev">
+        <!-- Making spirng assign laptop object to Dev SETTER INJECTION -->
+        <property name="laptop" ref="laptopId"/> 
+
+
     </bean>
     
+    <bean id="laptopId" class="com.springbokka.DemoSpring.Laptop">
+    </bean>
 </beans>
