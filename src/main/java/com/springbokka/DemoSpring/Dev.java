@@ -15,13 +15,19 @@ public class Dev {
 		this.age = age;
 	}
 
-	// Getter and setters are required for SETTER INJECTION for non primitive variables
+	// Getter and setters are required for SETTER INJECTION
 	// public Laptop getLaptop() {
 	// 	return laptop;
 	// }
-
 	// public void setLaptop(Laptop laptop) {
 	// 	this.laptop = laptop;
+	// }
+
+	// public int getAge() {
+	// 	return age;
+	// }
+	// public void setAge(int age) {
+	// 	this.age = age;
 	// }
 
 	public void build() {
