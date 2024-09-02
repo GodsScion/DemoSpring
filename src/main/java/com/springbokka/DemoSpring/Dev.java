@@ -5,13 +5,20 @@ public class Dev {
 	Computer computer;
 	int age;
 	
-	public Dev(Computer computer) {
-		this.computer = computer;
-	}
+	// public Dev(Computer computer) {
+	// 	this.computer = computer;
+	// }
 
-	public Dev(Computer computer, int age) {
+	// public Dev(Computer computer, int age) {
+	// 	this.computer = computer;
+	// 	this.age = age;
+	// }
+
+	public Computer getComputer() {
+		return computer;
+	}
+	public void setComputer(Computer computer) {
 		this.computer = computer;
-		this.age = age;
 	}
 
 	public void build() {
